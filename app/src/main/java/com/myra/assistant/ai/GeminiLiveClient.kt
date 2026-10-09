@@ -77,7 +77,7 @@ class GeminiLiveClient(
 
     val systemPrompt = buildSystemPrompt(userName, personality)
 
-    val wsUrl = "wss://generativelanguage.googleapis.com/ws/google.ai.generativelanguage.v1alpha.GenerativeService.BidiGenerateContent?key=$apiKey"
+    val wsUrl = "wss://generativelanguage.googleapis.com/ws/google.ai.generativelanguage.v1beta.GenerativeService.BidiGenerateContent?key=$apiKey"
 
     val request = Request.Builder()
       .url(wsUrl)
